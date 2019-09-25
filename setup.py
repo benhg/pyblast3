@@ -14,18 +14,18 @@ with open(fn) as f:
     version = pyblast.VERSION
 
 setup(
-    name='pyblast',
+    name='pyblast3',
     version=version,
     description='Run NCBI BLAST with an easy-to-use Pythonic API',
     long_description=long_description,
     author='Peter Griess, Ben Glick',
     author_email='pg@std.in, glick@glick.cloud',
-    py_modules=['pyblast'],
+    py_modules=['pyblast3'],
     url='https://github.com/benhg/pyblast',
     classifiers=[
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 23',
+        'Programming Language :: Python :: 3',
         'Topic :: Scientific/Engineering',
         'Topic :: Scientific/Engineering :: Bio-Informatics',
         'Topic :: Software Development :: Libraries',
