@@ -8,7 +8,7 @@ import errno
 import fcntl
 import os
 import select
-import StringIO
+from io import StringIO ## for Python 3
 import subprocess
 
 
@@ -264,7 +264,7 @@ def __run_blast_select_loop(input_file, popens, fields):
             try:
                 written = os.write(fd, qs)
                 qs = qs[written:]
-            except OSError, e:
+            except OSError as e:
                 assert e.errno == errno.EWOULDBLOCK
 
             fd_map[fd]['query_buffer'] = qs
