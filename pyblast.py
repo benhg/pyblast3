@@ -12,7 +12,7 @@ from io import StringIO ## for Python 3
 import subprocess
 
 
-VERSION = '0.1'
+VERSION = '0.2'
 '''
 Version of pyblast.
 '''
