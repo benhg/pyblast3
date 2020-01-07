@@ -21,7 +21,7 @@ setup(
     description='Run NCBI BLAST with an easy-to-use Pythonic API',
     long_description=long_description,
     author='Peter Griess, Ben Glick',
-    author_email='pg@std.in, glick@glick.cloud',
+    author_email='glick@glick.cloud',
     py_modules=find_packages(),
     url='https://github.com/benhg/pyblast',
     classifiers=[
