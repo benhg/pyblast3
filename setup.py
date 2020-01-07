@@ -1,6 +1,8 @@
 from distutils.core import setup
 from os.path import dirname, join
 import importlib
+from setuptools import setup, find_packages
+
 
 # Create the long_description from README.rst, minus the first 6 lines which
 # are redundant with the name, version, and short description alreayd displayed
@@ -20,7 +22,7 @@ setup(
     long_description=long_description,
     author='Peter Griess, Ben Glick',
     author_email='pg@std.in, glick@glick.cloud',
-    py_modules=['pyblast3'],
+    py_modules=find_packages(),
     url='https://github.com/benhg/pyblast',
     classifiers=[
         'License :: OSI Approved :: MIT License',
